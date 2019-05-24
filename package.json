@@ -1,0 +1,56 @@
+{
+  "name": "react-jsonform-shape",
+  "version": "0.1.0-alpha.0",
+  "description": "A mini React library that abstracts the generation of forms from a JSON. ",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "test:cypress:dev": "npm-run-all --parallel --race start 'cy:open -- --config baseUrl=http://localhost:8080'",
+    "test:spec1": "./node_modules/cypress/bin/cypress run --spec cypress/integration/input_fields_spec.js  -b chrome",
+    "cy:open": "cypress open",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slugs99/react-jsonform-shape.git"
+  },
+  "keywords": [
+    "builder",
+    "dynamic",
+    "dynamic-form",
+    "form",
+    "form-builder",
+    "form-generator",
+    "generator",
+    "json",
+    "jsonform",
+    "json-schema",
+    "react"
+  ],
+  "author": "Tyro Hunter Tan <tantyrohunter@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slugs99/react-jsonform-shape/issues"
+  },
+  "homepage": "https://github.com/slugs99/react-jsonform-shape#readme",
+  "dependencies": {
+    "react": "^16.8.6"
+  },
+  "devDependencies": {
+    "antd": "^3.18.2",
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "cypress": "^3.3.1",
+    "cypress-react-unit-test": "^2.4.1",
+    "npm-run-all": "^4.1.5",
+    "react-dom": "^16.8.6",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  }
+}
